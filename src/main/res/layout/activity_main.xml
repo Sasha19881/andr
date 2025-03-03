@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/balanceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Баланс: 500"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/slotsCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:cardBackgroundColor="#80FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/balanceTextView">
+
+        <LinearLayout
+            android:id="@+id/slotsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/slot1ImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Slot 1"
+                        android:src="@drawable/cherry"/>
+
+                    <View
+                        android:id="@+id/line1_horizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="#FF0000"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:id="@+id/line1_vertical"
+                        android:layout_width="5dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="#0000FF"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/slot2ImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Slot 2"
+                        android:src="@drawable/lemon"/>
+
+                    <View
+                        android:id="@+id/line2_horizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="#FF0000"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:id="@+id/line2_vertical"
+                        android:layout_width="5dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="#0000FF"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/slot3ImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Slot 3"
+                        android:src="@drawable/seven"/>
+                    <View
+                        android:id="@+id/line3_horizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="#FF0000"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:id="@+id/line3_vertical"
+                        android:layout_width="5dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="#0000FF"
+                        android:visibility="gone"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/slot4ImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Slot 4"
+                        app:srcCompat="@drawable/pas"/>
+
+                    <View
+                        android:id="@+id/line4_horizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="#FF0000"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:id="@+id/line4_vertical"
+                        android:layout_width="5dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="#0000FF"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/slot5ImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Slot 5"
+                        app:srcCompat="@drawable/vino"/>
+
+                    <View
+                        android:id="@+id/line5_horizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="#FF0000"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:id="@+id/line5_vertical"
+                        android:layout_width="5dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="#0000FF"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/slot6ImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Slot 6"
+                        app:srcCompat="@drawable/pas"/>
+
+                    <View
+                        android:id="@+id/line6_horizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="#FF0000"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:id="@+id/line6_vertical"
+                        android:layout_width="5dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="#0000FF"
+                        android:visibility="gone"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/slot7ImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Slot 7"
+                        app:srcCompat="@drawable/vino"/>
+
+                    <View
+                        android:id="@+id/line7_horizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="#FF0000"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:id="@+id/line7_vertical"
+                        android:layout_width="5dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="#0000FF"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/slot8ImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Slot 8"
+                        android:src="@drawable/cherry"/>
+
+                    <View
+                        android:id="@+id/line8_horizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="#FF0000"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:id="@+id/line8_vertical"
+                        android:layout_width="5dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="#0000FF"
+                        android:visibility="gone"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/slot9ImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="8dp"
+                        android:contentDescription="Slot 9"
+                        app:srcCompat="@drawable/arbuz"/>
+
+                    <View
+                        android:id="@+id/line9_horizontal"
+                        android:layout_width="80dp"
+                        android:layout_height="5dp"
+                        android:layout_gravity="center"
+                        android:background="#FF0000"
+                        android:visibility="gone"/>
+
+                    <View
+                        android:id="@+id/line9_vertical"
+                        android:layout_width="5dp"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:background="#0000FF"
+                        android:visibility="gone"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/betControlsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/slotsCardView">
+
+        <ImageButton
+            android:id="@+id/decreaseBetButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/arrow_button_background"
+            android:contentDescription="Уменьшить ставку"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_arrow_left"/>
+
+        <EditText
+            android:id="@+id/betEditText"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="Ставка"
+            android:inputType="number"
+            android:text="10"
+            android:textColor="#000000"
+            android:textSize="40sp"/>
+
+        <ImageButton
+            android:id="@+id/increaseBetButton"
+            android:layout_width="50dp"
+            android:layout_height="55dp"
+            android:background="@drawable/arrow_button_background"
+            android:contentDescription="Увеличить ставку"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_arrow_right"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/spinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_border"
+        android:backgroundTint="#4CAF50"
+        android:text="Вращать"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/betControlsLayout"/>
+
+    <TextView
+        android:id="@+id/winTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#ffffff"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="10"
+        android:text="Выигрыш: 0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
